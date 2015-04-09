@@ -1,0 +1,22 @@
+{
+  "name": "fetch-agent",
+  "version": "0.0.1",
+  "description": "Fetch for URL, Agent for Request",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limingv5/fetch-agent"
+  },
+  "keywords": [
+    "fetch",
+    "agent"
+  ],
+  "dependencies": {
+    "iconv-lite": "^0.4.4",
+    "is-utf8": "^0.2.0"
+  },
+  "author": "limingv5",
+  "license": "MIT",
+  "readmeFile": "README.md"
+}
