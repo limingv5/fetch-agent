@@ -1,9 +1,11 @@
 {
   "name": "fetch-agent",
-  "version": "0.0.1",
-  "description": "Fetch for URL, Agent for Request",
+  "version": "0.0.2",
+  "description": "Get Remote Resources",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/limingv5/fetch-agent"
@@ -12,11 +14,14 @@
     "fetch",
     "agent"
   ],
-  "dependencies": {
-    "iconv-lite": "^0.4.4",
-    "is-utf8": "^0.2.0"
-  },
   "author": "limingv5",
-  "license": "MIT",
-  "readmeFile": "README.md"
+  "license": "ISC",
+  "dependencies": {
+    "iconv-lite": "~0.4.7",
+    "is-utf8": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.4",
+    "rewire": "~2.3.1"
+  }
 }
