@@ -12,13 +12,19 @@ var fetch = require("fetch-agent");
 ```
 
 ```
-fetch(url, [hosts,] function (err, buff) {
+fetch.request(url, [hostsMap,] function (err, buff) {
   ...
 });
 ```
 
 ```
-fetch(option, [hosts,] function (err, buff) {
+fetch.request(option, [hostsMap,] function (err, buff) {
+  ...
+});
+```
+
+```
+fetch.pipe(req, [hostsMap,] function (err, buff, nsres) {
   ...
 });
 ```

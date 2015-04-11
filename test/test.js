@@ -3,19 +3,17 @@ var rewire = require("rewire");
 
 describe("Fetch", function () {
   describe("Request", function () {
-    var request = rewire("../index");
+    var util = rewire("../lib/util");
 
     /**
      *  buildOption
      */
-    var buildOption = request.__get__("buildOption");
-
     it("//www.taobao.com/a.html", function () {
-      var opt = buildOption("//www.taobao.com/a.html");
+      var opt = util.buildOption("//www.taobao.com/a.html");
       assert.equal("string", typeof opt.protocol);
       assert.equal(true, ["http:", "https:"].indexOf(opt.protocol) > -1);
 
-      opt = buildOption("https://www.taobao.com/a.html");
+      opt = util.buildOption("https://www.taobao.com/a.html");
       assert.equal("string", typeof opt.protocol);
       assert.equal(true, ["http:", "https:"].indexOf(opt.protocol) > -1);
     });
@@ -23,19 +21,19 @@ describe("Fetch", function () {
     /**
      * replaceHost
      */
-    var replaceHost = request.__get__("replaceHost");
-
     it("replaceHost", function () {
-      var opt = replaceHost({host:"www.taobao.com"}, {"www.taobao.com":"115.238.23.251"});
+      var opt = util.replaceHost({host:"www.taobao.com"}, {"www.taobao.com":"115.238.23.251"});
       assert.equal(true, opt.host == opt.hostname);
       assert.equal(true, opt.host == "115.238.23.251");
 
-      opt = replaceHost({host:"www.taobao.com"});
+      opt = util.replaceHost({host:"www.taobao.com"});
       assert.equal(true, opt.host == "www.taobao.com");
 
-      opt = replaceHost({});
+      opt = util.replaceHost({});
       assert.equal(true, typeof opt.host == "undefined");
     });
+
+    var request = rewire("../lib/request");
 
     /**
      * fetch

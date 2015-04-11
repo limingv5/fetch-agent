@@ -1,6 +1,6 @@
 {
   "name": "fetch-agent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get Remote Resources",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "fetch",
+    "pipe",
     "agent"
   ],
   "author": "limingv5",
