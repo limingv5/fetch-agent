@@ -9,9 +9,16 @@ npm install fetch-agent
 ## Invoke
 ```
 var fetch = require("fetch-agent");
+```
 
-var option = fetch.request.buildOption(url);
-fetch.request(option, function (err, buff) {
+```
+fetch(url, [hosts,] function (err, buff) {
+  ...
+});
+```
+
+```
+fetch(option, [hosts,] function (err, buff) {
   ...
 });
 ```

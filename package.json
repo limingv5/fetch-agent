@@ -1,6 +1,6 @@
 {
   "name": "fetch-agent",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Get Remote Resources",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,6 @@
   ],
   "author": "limingv5",
   "license": "ISC",
-  "dependencies": {
-    "iconv-lite": "~0.4.7",
-    "is-utf8": "~0.2.0"
-  },
   "devDependencies": {
     "mocha": "~2.2.4",
     "rewire": "~2.3.1"
