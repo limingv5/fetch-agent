@@ -1,6 +1,6 @@
 {
   "name": "fetch-agent",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Get Remote Resources",
   "main": "index.js",
   "scripts": {
