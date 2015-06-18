@@ -28,3 +28,11 @@ fetch.pipe(req, [hostsMap,] function (err, buff, nsres) {
   ...
 });
 ```
+
+```
+fetch.proxy(req, res, function onSuccess(err, buff, nsres) {
+  ...
+}, function onError(err, nsres) {
+  ...
+});
+```
